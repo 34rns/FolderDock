@@ -1,0 +1,15 @@
+# Local continuity, test output, installation snapshots and release archives
+/reports/
+/releases/
+/folderdock-kit/
+/AGENTS.md
+/TODO.md
+/START-PROMPT.md
+/node_modules/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example

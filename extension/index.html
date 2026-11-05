@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FolderDock</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/library.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="toolbar" aria-label="Asset controls">
+            <input type="search" class="search-box" placeholder="Search files or #tags" id="search-input" aria-label="Search files or tags">
+            <select class="sort-select" id="sort-select" aria-label="Sort assets">
+                <option value="name">Name</option><option value="modified">Newest files</option>
+                <option value="size">Largest files</option><option value="type">File type</option><option value="recent">Collection order</option>
+            </select>
+            <div class="toolbar-actions">
+                <button class="btn-icon" id="btn-refresh" title="Refresh folder" aria-label="Refresh folder">↻</button>
+                <button class="btn-icon" id="btn-size-toggle" title="Change thumbnail size" aria-label="Change thumbnail size">▦</button>
+                <button class="btn-icon" id="btn-settings" title="Settings" aria-label="Settings">⚙</button>
+            </div>
+            <div class="filter-chips" aria-label="File type filters">
+                <button class="chip active" data-kind="all" aria-pressed="true">All</button>
+                <button class="chip" data-kind="video" aria-pressed="false">Video</button>
+                <button class="chip" data-kind="image" aria-pressed="false">Image</button>
+                <button class="chip" data-kind="audio" aria-pressed="false">Audio</button>
+                <button class="chip" data-kind="preset" aria-pressed="false">Preset</button>
+                <button class="chip" data-kind="project" aria-pressed="false">Project</button>
+                <button class="chip" data-kind="other" aria-pressed="false">Other</button>
+            </div>
+        </header>
+        <aside class="sidebar" aria-label="Library">
+            <div>
+                <div class="sidebar-section-title"><span>Folders</span>
+                    <button class="btn-icon" id="btn-add-folder" title="Add folder" aria-label="Add folder">+</button>
+                </div>
+                <div class="sidebar-list" id="folders-list"></div>
+            </div>
+            <div><div class="sidebar-section-title">Favorites</div><div class="sidebar-list" id="favorites-list"></div></div>
+            <div><div class="sidebar-section-title">Recent</div><div class="sidebar-list" id="recents-list"></div></div>
+            <div id="host-status" role="status">Connecting to Adobe…</div>
+        </aside>
+        <main class="main-area">
+            <div class="browse-heading"><span id="view-label">Your library</span></div>
+            <section class="grid-region" id="grid-region" aria-label="Assets"></section>
+            <footer class="preview-region" id="preview-region"><p class="empty-note">Select an asset to preview it</p></footer>
+        </main>
+    </div>
+    <script src="js/lib/CSInterface.js"></script>
+    <script src="js/core/types.js"></script>
+    <script src="js/core/fs.js"></script>
+    <script src="js/core/fs-system.js"></script>
+    <script src="js/core/fs-process.js"></script>
+    <script src="js/core/store-schema.js"></script>
+    <script src="js/core/fs-browser.js"></script>
+    <script src="js/core/fs-async.js"></script>
+    <script src="js/core/fs-binary.js"></script>
+    <script src="js/core/store.js"></script>
+    <script src="js/core/ffmpeg.js"></script>
+    <script src="js/core/waveforms.js"></script>
+    <script src="js/core/audio-decode.js"></script>
+    <script src="js/core/previews.js"></script>
+    <script src="js/core/scanner.js"></script>
+    <script src="js/core/catalog.js"></script>
+    <script src="dev/mock-host.js"></script>
+    <script src="js/core/bridge.js"></script>
+    <script src="js/ui/dom.js"></script>
+    <script src="js/ui/toolbar.js"></script>
+    <script src="js/ui/sidebar.js"></script>
+    <script src="js/ui/toast.js"></script>
+    <script src="js/ui/audio.js"></script>
+    <script src="js/ui/thumbs.js"></script>
+    <script src="js/ui/grid.js"></script>
+    <script src="js/ui/grid-window.js"></script>
+    <script src="js/ui/tags.js"></script>
+    <script src="js/ui/media.js"></script>
+    <script src="js/ui/preview.js"></script>
+    <script src="js/ui/menu.js"></script>
+    <script src="js/ui/settings.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

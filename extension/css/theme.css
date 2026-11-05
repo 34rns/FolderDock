@@ -1,0 +1,14 @@
+:root {
+    --bg: #1e1e1e;
+    --panel: #252526;
+    --surface: #2d2d2d;
+    --text: #d4d4d4;
+    --muted: #a0a0a6;
+    --border: #3c3c3c;
+    --accent: #ff8a3d;
+    --accent-hover: #ff9d5c;
+    --radius: 4px;
+    --thumb-size: 140px;
+    --scrim: rgba(0, 0, 0, .62);
+    --shadow: 0 8px 28px rgba(0, 0, 0, .4);
+}
