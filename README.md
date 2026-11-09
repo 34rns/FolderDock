@@ -67,3 +67,7 @@ See [Contributing](CONTRIBUTING.md) for optional browser checks, project structu
 ## License
 
 FolderDock code is [MIT licensed](LICENSE). Bundled Adobe CSInterface and the JSON compatibility helper retain their original terms; see [third-party notices](extension/THIRD_PARTY_NOTICES.md). FolderDock is an independent project and is not affiliated with or endorsed by Adobe.
+
+## Support
+
+[Buy me a coffee](https://www.supportkori.com/rnsofficial)
